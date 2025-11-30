@@ -138,6 +138,7 @@ nav ul{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     display:flex;
+    gap: 1rem;
 }
 
 nav a{
@@ -228,12 +229,15 @@ p{
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
      display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 16px;
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
     display: grid;
+    grid-column: 1/-1;
 }
 
 #plants section{
@@ -241,7 +245,9 @@ p{
     /* TO DO */
     margin: 32px auto 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 #plants h4{
@@ -253,8 +259,9 @@ p{
     /* TO DO */
     width: 100%;
     max-width: 400px;
-    height: auto;
+    height: 400px;
     display: flex;
+    order: -1;
 }
 
 .price{
